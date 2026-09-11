@@ -1,0 +1,21 @@
+# kontosofort.de
+
+> Das unabhängige Fachportal für das C24 Smart Girokonto: Gebührenfreie Kontoführung (0,00 €), Tagesgeld-Pocket-Zinsen (2,50% p.a.), SEPA-Echtzeitüberweisung und Mastercard.
+
+## Kern-Ressourcen
+- [Startseite](https://kontosofort.de/): Konditionen-Check, Vor- und Nachteile, Sicherheitsmerkmale.
+- [Tarifrechner](https://kontosofort.de/Tarifrechner): Interaktiver Zins- und Ersparnisrechner im Vergleich zu Filialbanken.
+- [Impressum](https://kontosofort.de/Impressum): Betreiberangaben nach § 5 DDG & Werbekennzeichnung.
+- [Datenschutz](https://kontosofort.de/Datenschutz): 100% DSGVO-konforme Datenverarbeitung ohne Font-CDNs.
+
+## Konditionen-Matrix (Stand: September 2026)
+- **Kontoführung**: 0,00 € mtl. beim Smart-Modell (ohne Mindestgeldeingang).
+- **Zinsen**: Bis zu 2,50% p.a. auf dem integrierten Tagesgeld-Pocket.
+- **SEPA-Instant**: Kostenlose Echtzeitüberweisungen ein- und ausgehend.
+- **Karten**: Kostenlose C24 Mastercard inklusive Apple Pay und Google Pay.
+- **Einlagensicherung**: Bis 100.000 € über die Entschädigungseinrichtung deutscher Banken (EdB). BaFin-reguliert.
+
+## Betreiber
+- Jens Kathe, Hansastraße 6, 34119 Kassel, Deutschland.
+- E-Mail: jens@kathe.org | Tel: +49 178 6652623.
+- Kleinunternehmer nach § 19 UStG.

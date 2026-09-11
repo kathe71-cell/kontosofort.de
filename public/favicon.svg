@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Shield -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#bgGrad)" />
+  <!-- Shield outline accent -->
+  <rect x="44" y="44" width="424" height="424" rx="100" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-opacity="0.6" />
+  
+  <!-- Credit Card / Security Emblem -->
+  <g transform="translate(106, 128)">
+    <!-- Card Back Layer -->
+    <rect x="0" y="0" width="300" height="190" rx="24" fill="url(#emeraldGrad)" />
+    <!-- Magnetic Stripe / Chip Accent -->
+    <rect x="36" y="44" width="56" height="44" rx="8" fill="url(#goldGrad)" />
+    <!-- Contactless Wave -->
+    <path d="M230 40 A30 30 0 0 1 230 90 M245 30 A50 50 0 0 1 245 100 M260 20 A70 70 0 0 1 260 110" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9" />
+    <text x="36" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="28" fill="#ffffff" letter-spacing="4">•••• 2026</text>
+  </g>
+  <!-- Fast Instant Badge -->
+  <g transform="translate(290, 270)">
+    <circle cx="90" cy="90" r="76" fill="#f59e0b" />
+    <path d="M90 35 L62 98 L88 98 L76 145 L118 82 L92 82 Z" fill="#0f172a" />
+  </g>
+</svg>

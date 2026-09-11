@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kontosofort.de – Girokonto &amp; Zins-Vergleich</title>
+    <link>https://kontosofort.de/</link>
+    <description>Faktenbasierter Vergleich des C24 Smart Girokontos, Tagesgeld-Zinsen und SEPA-Instant Überweisungen.</description>
+    <language>de-DE</language>
+    <lastBuildDate>Mon, 07 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://kontosofort.de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C24 Smart Girokonto: 0,00 € Kontoführung &amp; 2,50% Zinsen im Test</title>
+      <link>https://kontosofort.de/</link>
+      <guid>https://kontosofort.de/#features</guid>
+      <pubDate>Mon, 07 Sep 2026 10:00:00 +0200</pubDate>
+      <description>Alle Konditionen, Einlagensicherung und digitale Kontoeröffnung in Deutschland.</description>
+    </item>
+  </channel>
+</rss>
