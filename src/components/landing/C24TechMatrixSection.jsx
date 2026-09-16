@@ -15,14 +15,8 @@ const C24_TECH_SPECS = [
     note: 'Überweisung in Echtzeit rund um die Uhr ohne Zusatzkosten.'
   },
   {
-    kategorie: 'Sicherheits- & Authentifizierung',
-    c24: 'Biometrie, 2FA & FIDO2 Passkey Support',
-    altbank: 'SMS-TAN / ChipTAN-Leser',
-    note: 'Schutz vor Phishing durch Zwei-Faktor-Authentifizierung in der App.'
-  },
-  {
     kategorie: 'Mobile Payment & Kartensysteme',
-    c24: 'Visa Debit, Apple Pay & Google Pay',
+    c24: <>Debit‑Mastercard* <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a>, Apple Pay & Google Pay</>,
     altbank: 'Eingeschränkte Girocard-Unterstützung',
     note: 'Kompatibel mit allen gängigen kontaktlosen Bezahlverfahren.'
   },
@@ -34,7 +28,7 @@ const C24_TECH_SPECS = [
   },
   {
     kategorie: 'Guthabenverzinsung (Tagesgeld)',
-    c24: '2,50 % p.a. auf Girokonto & Pockets',
+    c24: <>0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a> auf Girokonto & Pockets</>,
     altbank: '0,00 % p.a. Verzinsung',
     note: 'Verzinsung laut aktuellem Angebot des Anbieters.'
   },
@@ -70,7 +64,7 @@ export default function C24TechMatrixSection() {
         {/* Matrix Table Container */}
         <div className="bg-slate-50 rounded-3xl border border-slate-200 shadow-lg overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse min-w-[650px]">
+            <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-900 text-white border-b border-slate-800 text-xs uppercase tracking-wider">
                   <th className="py-4 px-6 font-extrabold w-1/3">Merkmal</th>

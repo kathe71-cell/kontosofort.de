@@ -23,7 +23,7 @@ export default function TagesgeldZinsenVergleich() {
             Tagesgeld-Zinsen direkt auf dem Girokonto
           </h1>
           <p className="mt-3 text-slate-600 text-base leading-relaxed">
-            Warum getrennte Tagesgeldkonten bei Drittbanken oft unnötig sind: Wie Sie mit modernen Tagesgeld-Pockets bis zu 2,50 % p.a. Zinsen direkt auf Ihrem Girokonto erhalten.
+            <>0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></>
           </p>
           <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-950 border border-emerald-300 text-xs font-bold">
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700" />
@@ -37,7 +37,7 @@ export default function TagesgeldZinsenVergleich() {
             Google AI Schnellantwort (Definition)
           </span>
           <p className="font-medium">
-            Ein verzinstes Girokonto mit Tagesgeld-Pockets zahlt Zinsen (wie 2,50 % p.a. bei der C24 Bank) auf flexible Unterkonten direkt in der Banking-App. Das Guthaben bleibt täglich verfügbar, ohne dass Überweisungen zu externen Banken abgewartet werden müssen.
+            <>Ein verzinstes Girokonto mit Tagesgeld-Pockets zahlt Zinsen (wie 0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a> bei der C24 Bank) auf flexible Unterkonten direkt in der Banking-App. Das Guthaben bleibt täglich verfügbar, ohne dass Überweisungen zu externen Banken abgewartet werden müssen.</>
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function TagesgeldZinsenVergleich() {
         <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
           <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 flex items-center gap-2">
             <TrendingUp className="w-6 h-6 text-amber-600" />
-            Beispielrechnung: Wie viel Zinsen bringen 2,50 % p.a.?
+            <>Beispielrechnung: Wie viel Zinsen bringen 0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a>?</>
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm border-collapse border border-slate-200 rounded-xl overflow-hidden">
@@ -60,27 +60,27 @@ export default function TagesgeldZinsenVergleich() {
               <tbody className="divide-y divide-slate-100 text-slate-700">
                 <tr>
                   <td className="p-3.5 font-bold bg-slate-50">5.000 € (Notgroschen)</td>
-                  <td className="p-3.5">2,50 %</td>
-                  <td className="p-3.5 font-bold text-emerald-700">125,00 €</td>
-                  <td className="p-3.5">ca. 10,42 €</td>
+                  <td className="p-3.5">0,75 %</td>
+                  <td className="p-3.5 font-bold text-emerald-700">37,50 €</td>
+                  <td className="p-3.5">ca. 3,13 €</td>
                 </tr>
                 <tr>
                   <td className="p-3.5 font-bold bg-slate-50">10.000 € (Ersparnisse)</td>
-                  <td className="p-3.5">2,50 %</td>
-                  <td className="p-3.5 font-bold text-emerald-700">250,00 €</td>
-                  <td className="p-3.5">ca. 20,83 €</td>
+                  <td className="p-3.5">0,75 %</td>
+                  <td className="p-3.5 font-bold text-emerald-700">75,00 €</td>
+                  <td className="p-3.5">ca. 6,25 €</td>
                 </tr>
                 <tr>
                   <td className="p-3.5 font-bold bg-slate-50">25.000 € (Rücklage)</td>
-                  <td className="p-3.5">2,50 %</td>
-                  <td className="p-3.5 font-bold text-emerald-700">625,00 €</td>
-                  <td className="p-3.5">ca. 52,08 €</td>
+                  <td className="p-3.5">0,75 %</td>
+                  <td className="p-3.5 font-bold text-emerald-700">187,50 €</td>
+                  <td className="p-3.5">ca. 15,63 €</td>
                 </tr>
                 <tr>
                   <td className="p-3.5 font-bold bg-slate-50">50.000 € (Maximal)</td>
-                  <td className="p-3.5">2,50 %</td>
-                  <td className="p-3.5 font-bold text-emerald-700">1.250,00 €</td>
-                  <td className="p-3.5">ca. 104,17 €</td>
+                  <td className="p-3.5">0,75 %</td>
+                  <td className="p-3.5 font-bold text-emerald-700">375,00 €</td>
+                  <td className="p-3.5">ca. 31,25 €</td>
                 </tr>
               </tbody>
             </table>
@@ -99,7 +99,7 @@ export default function TagesgeldZinsenVergleich() {
             C24 Smart Konto mit Tagesgeldpocket eröffnen
           </h2>
           <p className="text-slate-300 text-sm max-w-xl mx-auto">
-            0,00 € Kontoführungsgebühr, kostenlose Debitkarte und 2,50 % p.a. Zinsen direkt im kostenlosen Smart-Tarif.
+            0,00 € Kontoführungsgebühr, kostenlose Debitkarte und 0,75 % p.a. Zinsen direkt im kostenlosen Smart-Tarif.
           </p>
           <div className="pt-2">
             <a

@@ -9,7 +9,7 @@ import TarifrechnerSection from '@/components/landing/TarifrechnerSection';
 import ComparisonSection from '@/components/landing/ComparisonSection';
 import FAQSection from '@/components/landing/FAQSection';
 import Footer from '@/components/landing/Footer';
-import ScrollToTop from '@/components/landing/ScrollToTop';
+
 import StickyMobileBar from '@/components/landing/StickyMobileBar';
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
       metaDesc.name = 'description';
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = "Informationen zum C24 Smart Girokonto: 0,00 € Kontoführungsgebühr, 2,50 % p.a. Tagesgeld-Zinsen, SEPA Instant Echtzeitüberweisung & Visa Debitkarte.";
+    metaDesc.content = "Informationen zum C24 Smart Girokonto: 0,00 € Kontoführungsgebühr, 0,75 % p.a. Tagesgeld‑Zinsen, SEPA Instant Echtzeitüberweisung & Debit‑Mastercard.";
 
     // Add structured data
     const ldJsonScript = document.createElement('script');
@@ -72,7 +72,7 @@ export default function Home() {
       </main>
       <Footer />
       <StickyMobileBar />
-      <ScrollToTop />
+
     </div>
   );
 }

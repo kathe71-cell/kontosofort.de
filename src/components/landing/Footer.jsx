@@ -26,14 +26,7 @@ export default function Footer() {
               SEPA-Instant Überweisungen, Tagesgeld-Zinsen und digitale Kontoeröffnung in Deutschland.
             </p>
 
-            <div className="flex items-center gap-3 text-slate-300 font-bold">
-              <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md">
-                <Lock className="w-3.5 h-3.5 text-emerald-400" /> 256-Bit SSL Verschlüsselt
-              </div>
-              <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md">
-                <Shield className="w-3.5 h-3.5 text-amber-400" /> 100% DSGVO-Konform
-              </div>
-            </div>
+
           </div>
 
           {/* Quick Links */}
@@ -94,8 +87,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
-          <p>© 2026 kontosofort.de – Alle Rechte vorbehalten. | <Link to={createPageUrl('Impressum')} className="hover:text-slate-300 underline">Impressum</Link></p>
-          <p>100 % DSGVO-Konform • Ohne Drittanbieter-Tracking-Fonts</p>
+          <p>© 2026 kontosofort.de – Alle Rechte vorbehalten.</p>
         </div>
 
       </div>

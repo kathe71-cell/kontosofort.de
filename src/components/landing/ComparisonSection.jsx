@@ -17,7 +17,7 @@ const comparisonData = [
   },
   {
     feature: "Tagesgeld-Verzinsung",
-    c24: "2,50 % p.a. inklusive",
+      c24: <>0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a> inklusive</>,
     filiale: "0,00 % / Minimalverzinsung",
     c24Win: true
   },
@@ -41,7 +41,7 @@ const comparisonData = [
   },
   {
     feature: "Cashback Programm",
-    c24: "Bis zu 10 % Cashback bei Partnern",
+    c24: <>Basis‑Cashback 0,05 % (optional Aktions‑Cashback bis zu 2,5 % * Quelle)</>,
     filiale: "Kein Cashback",
     c24Win: true
   }

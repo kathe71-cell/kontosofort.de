@@ -120,9 +120,12 @@ export default function Impressum() {
             >
               <a href="/">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Zurück zur Startseite
+                Zurück zur Startseite *
               </a>
             </Button>
+            <span className="text-slate-500 italic">
+              * Werbelink / Partnerlink https://a.check24.net/misc/click.php?pid=83873&aid=18&deep=c24bank&cat=14
+            </span>
           </div>
 
         </div>

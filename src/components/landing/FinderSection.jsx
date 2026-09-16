@@ -20,15 +20,15 @@ const ACCOUNTS_DATA = [
     category: 'Alltags-Girokonto',
     feeMonth: 0.00,
     feeText: '0,00 € / Mon.',
-    interestRate: '2,50 % p.a.',
+    interestRate: '0,75 % p.a.',
     rating: 4.9,
     reviews: 1420,
     sepaLatency: '< 1,8 Sekunden',
-    features: ['SEPA Instant (< 2s Latenz)', 'Gratis Visa/Mastercard', 'Apple & Google Pay', 'Unterkonten / Pockets', 'Cashback / Zinsen'],
+    features: ['SEPA Instant (< 2s Latenz)', <>Debit‑Mastercard* <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></>, 'Apple & Google Pay', 'Unterkonten / Pockets', 'Cashback / Zinsen'],
     hardwareSupport: 'FIDO2 & WebAuthn ready',
     pros: [
       'Bedingungslos 0,00 € Kontoführungsgebühr',
-      '2,5 % Zinsen auf Tagesgeld & Unterkonten',
+      <>0,75 % Zinsen auf Tagesgeld & Unterkonten * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></>,
       'SEPA Instant Überweisungen kostenfrei in Echtzeit',
       'Bis zu 4 kostenlose Zusatzkarten inklusive'
     ],
@@ -432,11 +432,7 @@ export default function FinderSection() {
                       <span className="bg-slate-100 text-slate-800 border border-slate-200 text-[11px] font-bold px-2 py-0.5 rounded-md">
                         {account.hardwareSupport}
                       </span>
-                      {account.interestRate !== '0,00 %' && (
-                        <span className="bg-amber-100 text-amber-950 border border-amber-300 text-[11px] font-extrabold px-2 py-0.5 rounded-md">
-                          {account.interestRate} Zins
-                        </span>
-                      )}
+                      <span className="bg-amber-100 text-amber-950 border border-amber-300 text-[11px] font-extrabold px-2 py-0.5 rounded-md">{account.interestRate} Zins * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></span>
                     </div>
 
                     {/* Pros List */}

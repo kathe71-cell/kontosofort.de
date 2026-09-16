@@ -11,8 +11,8 @@ export default function HeroSection() {
   const c24Highlights = [
     { icon: Clock, title: "Online-Legitimation", desc: "Per eID Online-Ausweis oder Video-Ident" },
     { icon: Zap, title: "SEPA Instant", desc: "Kostenfreie Echtzeitüberweisungen 24/7" },
-    { icon: Percent, title: "2,50 % p.a. Zinsen", desc: "Verzinsung auf Tagesgeld & Pockets" },
-    { icon: Shield, title: "BaFin Einlagensicherung", desc: "Deutsche Vollbanklizenz bis 100.000 €" }
+    { icon: Percent, title: "0,75 % p.a. Zinsen", desc: "Verzinsung auf Tagesgeld & Pockets" },
+    { icon: Shield, title: "Einlagensicherung", desc: "Einlagensicherung über die EdB (bis 100.000 €)" }
   ];
 
   return (
@@ -40,12 +40,12 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.1]">
               C24 Smart Girokonto –{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-emerald-600 to-slate-900">
-                0,00 € Kontoführung, 2,5 % Zinsen &amp; Visa Karte
+                0,00 € Kontoführung, 0,75 % Zinsen &amp; Debit‑Mastercard
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-700 font-medium leading-relaxed max-w-2xl">
-              Das kostenlose Online-Girokonto der C24 Bank mit Visa Debitkarte, 
+              Das kostenlose Online-Girokonto der C24 Bank mit Debit‑Mastercard, 
               Tagesgeld-Zinsen, Unterkonten mit eigener IBAN und automatischer Cashback-Funktion bei Partnern.
             </p>
 
@@ -99,7 +99,7 @@ export default function HeroSection() {
               </span>
               <span className="text-slate-300">•</span>
               <span className="flex items-center gap-1.5 text-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" /> SCHUFA-neutrale Konditionsanfrage
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Bei der Kontoeröffnung wird eine SCHUFA‑Abfrage durchgeführt, um die Bonität zu prüfen. * <a href="https://hilfe.c24.de/hc/de/articles/11313979448722-Wann-erfolgt-eine-Datenübermittlung-an-die-SCHUFA" target="_blank" rel="noopener noreferrer">Quelle</a>
               </span>
               <span className="text-slate-300">•</span>
               <span className="text-slate-500 italic">* Werbelink / Partnerlink zu C24</span>
@@ -138,10 +138,10 @@ export default function HeroSection() {
                 <div className="space-y-3">
                   {[
                     { label: "Kontoführungsgebühr", val: "0,00 € / Monat", highlight: true },
-                    { label: "Tagesgeld-Zinsen", val: "2,50 % p.a. inklusive", highlight: true },
+                    { label: "Tagesgeld-Zinsen", val: <>0,75 % p.a. inklusive * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></>, highlight: true },
                     { label: "Echtzeit-Überweisung", val: "SEPA Instant inklusive", highlight: false },
-                    { label: "Gratiskarten", val: "Visa Debitkarte inklusive", highlight: false },
-                    { label: "Cashback Programm", val: "Bis zu 10 % bei Partnern", highlight: true },
+                    { label: "Gratiskarten", val: "Debit‑Mastercard inklusive", highlight: false },
+                    { label: "Cashback Programm", val: <>Basis‑Cashback 0,05 % (optional Aktions‑Cashback bis zu 2,5 % * <a href="https://www.c24.de/preise" target="_blank" rel="noopener noreferrer">Quelle</a>)</>, highlight: true },
                     { label: "Sicherheit & Auth", val: "Biometrie & 2-Faktor-Auth", highlight: false }
                   ].map((spec, i) => (
                     <div key={i} className="flex items-center justify-between text-sm py-1.5 border-b border-slate-100 last:border-0">

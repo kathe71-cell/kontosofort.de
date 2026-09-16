@@ -13,16 +13,6 @@ export default function TrustSection() {
       title: "100.000 € Schutz",
       desc: "Gesetzliche europäische Einlagensicherung pro Kunde."
     },
-    {
-      icon: FileCheck,
-      title: "ISO/IEC 27001",
-      desc: "Zertifizierte Informationssicherheit & 256-Bit TLS 1.3."
-    },
-    {
-      icon: Award,
-      title: "100% DSGVO-Sicher",
-      desc: "Keine Server in Drittstaaten. Voller Datenschutz nach EU-Recht."
-    }
   ];
 
   return (
@@ -55,7 +45,7 @@ export default function TrustSection() {
 
         <div className="pt-6 border-t border-slate-800 flex flex-wrap justify-center items-center gap-6 text-xs text-slate-400 font-semibold text-center">
           <span className="flex items-center gap-1.5 text-slate-300">
-            <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Verifizierter Vergleich 2026
+            <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Methodik: Vergleich basierend auf öffentlich verfügbaren Produktdaten (Stand 2026‑09‑15, Quelle C24 Smart‑Produkt‑Seite).
           </span>
           <span className="text-slate-700">•</span>
           <span className="flex items-center gap-1.5 text-slate-300">

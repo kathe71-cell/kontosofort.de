@@ -36,7 +36,7 @@ export default function StickyMobileBar() {
                 <Zap className="w-3 h-3 fill-amber-400" /> C24 Smart 0 €
               </span>
               <span className="text-slate-300 text-[11px] font-medium flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3 text-emerald-400" /> 2,5 % Zinsen • eID
+                <ShieldCheck className="w-3 h-3 text-emerald-400" /> 0,75 % Zinsen • eID
               </span>
             </div>
 

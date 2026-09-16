@@ -81,8 +81,8 @@ export default function ExpertMatrixSection() {
 
         {/* Matrix Table Container */}
         <div className="bg-slate-50 rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse min-w-[700px]">
+          <div className="overflow-x-auto w-full">
+            <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-900 text-white border-b border-slate-800 text-xs uppercase tracking-wider">
                   <th className="py-4 px-6 font-extrabold w-1/4">Feature / Standard</th>

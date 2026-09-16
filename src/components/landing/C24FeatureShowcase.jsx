@@ -19,7 +19,7 @@ const C24_PILLARS = [
     features: [
       'Jedes Pocket besitzt eine vollwertige eigene IBAN',
       'Automatischer Aufrundungs-Sparer bei Kartenzahlungen',
-      '2,50 % p.a. Verzinsung auch auf Pockets',
+      '0,75 % p.a. Verzinsung auch auf Pockets',
       'Karten direkt einzelnen Pockets zuweisen'
     ]
   },
@@ -60,9 +60,7 @@ const C24_PILLARS = [
     desc: 'Sicherheit durch biometrische 2-Faktor-Authentifizierung. Legitimieren Sie sich per Personalausweis-NFC (eID) oder Video-Ident.',
     features: [
       'Deutscher Personalausweis per NFC mit AusweisApp',
-      'Biometrisches In-App 2FA (FaceID / TouchID)',
-      '256-Bit End-to-End TLS Verschlüsselung',
-      'BaFin Vollbanklizenz mit 100.000 € EdB Einlagensicherung'
+      'Biometrisches In-App 2FA (FaceID / TouchID)'
     ]
   }
 ];
@@ -181,7 +179,7 @@ export default function C24FeatureShowcase() {
             <div className="space-y-3 text-xs font-semibold text-slate-300">
               <div className="flex justify-between py-1.5 border-b border-slate-800">
                 <span>Tagesgeldzins:</span>
-                <span className="text-amber-400 font-extrabold">2,50 % p.a.</span>
+                <span className="text-amber-400 font-extrabold"><>0,75 % p.a.* <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></></span>
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-800">
                 <span>Echtzeitüberweisung:</span>
@@ -189,7 +187,7 @@ export default function C24FeatureShowcase() {
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-800">
                 <span>Karten:</span>
-                <span className="text-white font-extrabold">Visa Debitkarte</span>
+                <span className="text-white font-extrabold">Debit‑Mastercard</span>
               </div>
               <div className="flex justify-between py-1.5 border-b border-slate-800">
                 <span>Einlagensicherung:</span>

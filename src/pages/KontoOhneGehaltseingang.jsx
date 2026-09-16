@@ -37,7 +37,7 @@ export default function KontoOhneGehaltseingang() {
             Google AI Schnellantwort (Definition)
           </span>
           <p className="font-medium">
-            Ein kostenloses Girokonto ohne Gehaltseingang verlangt keine monatliche Mindesteinzahlung (wie sonst 700 € bei Direktbanken), um die 0,00 € Kontoführungsgebühr zu erhalten. Das <strong>C24 Smart Girokonto</strong> ist das führende deutsche Modell ohne Mindesteingang und beinhaltet eine kostenlose Mastercard Debitkarte sowie 2,50 % p.a. Zinsen.
+            <>Ein kostenloses Girokonto ohne Gehaltseingang verlangt keine monatliche Mindesteinzahlung (wie sonst 700 € bei Direktbanken), um die 0,00 € Kontoführungsgebühr zu erhalten. Das <strong>C24 Smart Girokonto</strong> ist das führende deutsche Modell ohne Mindesteingang und beinhaltet eine kostenlose Mastercard Debitkarte sowie 0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a> Zinsen.</>
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function KontoOhneGehaltseingang() {
                   </td>
                   <td className="p-3.5 font-black text-emerald-700">0,00 € / Monat</td>
                   <td className="p-3.5 font-bold text-slate-900">Keiner (0 €)</td>
-                  <td className="p-3.5 font-bold text-slate-900">2,50 % p.a.</td>
+                  <td className="p-3.5 font-bold text-slate-900"><>0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a></></td>
                 </tr>
                 <tr>
                   <td className="p-3.5 font-bold bg-slate-50">ING Girokonto</td>

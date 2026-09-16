@@ -80,7 +80,7 @@ export default function Tarifrechner() {
           </div>
           <div className="flex items-center gap-3 bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-            <span className="text-slate-800 font-extrabold text-xs">SCHUFA-neutrale Abfrage</span>
+            <span className="text-slate-800 font-extrabold text-xs">SCHUFA‑Abfrage</span>
           </div>
           <div className="flex items-center gap-3 bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
@@ -96,9 +96,12 @@ export default function Tarifrechner() {
             className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-6 rounded-xl shadow-md border border-amber-400 text-sm focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
-              Direkt zum Testsieger C24 Bank
+              Direkt zum Testsieger C24 Bank *
               <ArrowRight className="ml-2 w-4 h-4 stroke-[3]" />
             </a>
+            <span className="text-slate-500 italic">
+              * Werbelink / Partnerlink https://a.check24.net/misc/click.php?pid=83873&aid=18&deep=c24bank&cat=14
+            </span>
           </Button>
 
           <Button

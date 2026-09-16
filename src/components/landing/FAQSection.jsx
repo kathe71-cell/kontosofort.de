@@ -16,12 +16,12 @@ const FAQS = [
   {
     id: 'faq-2',
     question: "Ist das C24 Smart Girokonto wirklich kostenlos?",
-    answer: "Ja, im C24 Smart Tarif fällt laut Angaben der C24 Bank GmbH keine monatliche Kontoführungsgebühr an. Es wird kein Mindestgeldeingang gefordert. Beleglose SEPA- und SEPA-Instant-Überweisungen sowie die Visa Debitkarte sind im Smart Tarif enthalten."
+    answer: <>Ja, im C24 Smart Tarif fällt laut Angaben der C24 Bank GmbH keine monatliche Kontoführungsgebühr an. Es wird kein Mindestgeldeingang gefordert. Beleglose SEPA- und SEPA-Instant-Überweisungen sowie die Debit‑Mastercard* <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a> sind im Smart Tarif enthalten.</>,
   },
   {
     id: 'faq-3',
     question: "Wie funktioniert die Verzinsung auf Girokonto und Pockets?",
-    answer: "Die C24 Bank gewährt auf das Guthaben des C24 Smart Girokontos sowie auf den Pockets Tagesgeld-Zinsen (aktuell 2,50 % p.a.). Die Zinsgutschrift erfolgt monatlich direkt auf das Konto."
+    answer: <>Die C24 Bank gewährt auf das Guthaben des C24 Smart Girokontos sowie auf die Pockets Tagesgeld‑Zinsen (aktuell 0,75 % p.a. * <a href="https://c24.de" target="_blank" rel="noopener noreferrer">Quelle</a>). Die Zinsgutschrift erfolgt monatlich direkt auf das Konto.</>,
   },
   {
     id: 'faq-4',
@@ -36,7 +36,7 @@ const FAQS = [
   {
     id: 'faq-6',
     question: "Wird bei der Kontoeröffnung die SCHUFA abgefragt?",
-    answer: "Die Schufa-Abfrage bei Neueröffnung des C24 Smart Girokontos erfolgt in der Regel als SCHUFA-neutrale Konditionsanfrage, was den Schufa-Score nicht negativ beeinflusst."
+    answer: "Bei der Kontoeröffnung wird eine SCHUFA‑Abfrage durchgeführt, um die Bonität zu prüfen. * <a href=\"https://hilfe.c24.de/hc/de/articles/11313979448722-Wann-erfolgt-eine-Datenübermittlung-an-die-SCHUFA\" target=\"_blank\" rel=\"noopener noreferrer\">Quelle</a>"
   }
 ];
 
