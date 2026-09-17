@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
-  Zap, Shield, CreditCard, Lock, Smartphone, RefreshCw, Cpu, Award, CheckCircle2 
+  Zap, Shield, CreditCard, Lock, Smartphone, RefreshCw, Cpu, Award, CheckCircle2, ArrowRight 
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -28,13 +29,17 @@ export default function BenefitsSection() {
       icon: CreditCard,
       title: "0,00 € Kontoführungsgebühr",
       desc: "Das C24 Smart Konto hat keine monatliche Grundgebühr und erfordert keinen geforderten Mindestgeldeingang.",
-      tag: "KOSTENLOSER TARIF"
+      tag: "KOSTENLOSER TARIF",
+      link: "/kostenloses-girokonto-ohne-gehaltseingang",
+      linkText: "Zum Girokonto ohne Gehaltseingang Vergleich"
     },
     {
       icon: RefreshCw,
-      title: "Pockets mit eigener IBAN",
-      desc: "Erstellen Sie Unterkonten mit eigenen deutschen IBANs für die strukturierte Aufteilung Ihrer Ersparnisse.",
-      tag: "SUB-IBANs"
+      title: "Pockets mit eigener IBAN & Zinsen",
+      desc: "Erstellen Sie Unterkonten mit eigenen deutschen IBANs und Tagesgeld-Verzinsung direkt in der Banking-App.",
+      tag: "SUB-IBANs & ZINSEN",
+      link: "/tagesgeld-zinsen-vergleich",
+      linkText: "Zum Tagesgeld-Zinsen Ratgeber"
     },
     {
       icon: Shield,
@@ -94,9 +99,20 @@ export default function BenefitsSection() {
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-emerald-700">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Im C24 Smart Tarif enthalten</span>
+              <div className="pt-6 mt-6 border-t border-slate-100 flex flex-col gap-2">
+                <div className="flex items-center gap-2 text-xs font-bold text-emerald-700">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                  <span>Im C24 Smart Tarif enthalten</span>
+                </div>
+                {item.link && (
+                  <Link 
+                    to={item.link} 
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 group-hover:translate-x-0.5 transition-all mt-1"
+                  >
+                    <span>{item.linkText}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}

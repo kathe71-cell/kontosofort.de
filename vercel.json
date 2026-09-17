@@ -1,5 +1,22 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/(zh|de|en)?/?(z?impressum|zh/impressum)",
+      "destination": "/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/(zh|de|en)?/?(z?datenschutz|zh/datenschutz)",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/(home|Home)",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!ads\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|llms\\.txt|.*\\.svg|.*\\.png|.*\\.ico).*)",

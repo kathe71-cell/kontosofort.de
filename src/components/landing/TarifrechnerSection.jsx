@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Calculator, ArrowRight, CheckCircle2, Sparkles, TrendingUp, Percent, Gift, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
@@ -160,6 +161,12 @@ export default function TarifrechnerSection() {
                 <ArrowRight className="ml-2 w-5 h-5 stroke-[3]" />
               </a>
             </Button>
+
+            <div className="pt-2 text-center">
+              <Link to="/tarifrechner" className="text-xs font-semibold text-slate-400 hover:text-amber-400 underline transition-colors">
+                Zum detaillierten Girokonto-Tarifvergleich (alle Banken) &rarr;
+              </Link>
+            </div>
           </div>
 
         </div>

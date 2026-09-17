@@ -7,6 +7,17 @@ import { createPageUrl } from "@/utils";
 export default function Datenschutz() {
   useEffect(() => {
     document.title = "Datenschutzerklärung (DSGVO) | kontosofort.de";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://kontosofort.de/datenschutz";
+
+    return () => {
+      if (canonical) canonical.href = "https://kontosofort.de/";
+    };
   }, []);
 
   return (

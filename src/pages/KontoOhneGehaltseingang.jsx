@@ -6,7 +6,30 @@ import { CheckCircle2, Shield, ArrowRight, Star, Sparkles, Building2, HelpCircle
 export default function KontoOhneGehaltseingang() {
   useEffect(() => {
     document.title = "Kostenloses Girokonto ohne Gehaltseingang 2026 – Vergleich & Test";
+    
+    // Set canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://kontosofort.de/kostenloses-girokonto-ohne-gehaltseingang";
+
+    // Set meta description
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.name = 'description';
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.content = "Vergleich der besten kostenlosen Girokonten ohne Gehaltseingang 2026: 0,00 € Kontoführung bei C24 Bank ohne Mindesteingang, inkl. Debitkarte & Zinsen.";
+
     window.scrollTo(0, 0);
+
+    return () => {
+      if (canonical) canonical.href = "https://kontosofort.de/";
+    };
   }, []);
 
   return (

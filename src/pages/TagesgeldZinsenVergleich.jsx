@@ -6,7 +6,30 @@ import { CheckCircle2, ArrowRight, TrendingUp, PiggyBank, ShieldCheck } from "lu
 export default function TagesgeldZinsenVergleich() {
   useEffect(() => {
     document.title = "Tagesgeld Zinsen 2026 – Tagesgeld direkt auf dem Girokonto | kontosofort.de";
+    
+    // Set canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://kontosofort.de/tagesgeld-zinsen-vergleich";
+
+    // Set meta description
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.name = 'description';
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.content = "Tagesgeld-Zinsen direkt auf dem Girokonto: 0,75 % p.a. Guthabenzinsen bei C24 Bank mit täglicher Verfügbarkeit auf Pockets & Einlagensicherung.";
+
     window.scrollTo(0, 0);
+
+    return () => {
+      if (canonical) canonical.href = "https://kontosofort.de/";
+    };
   }, []);
 
   return (

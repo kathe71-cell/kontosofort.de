@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           
           {/* Brand Col */}
-          <div className="md:col-span-2 space-y-4">
+          <div className="sm:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 bg-slate-900 border border-slate-700 rounded-xl flex items-center justify-center">
                 <Shield className="w-5 h-5 text-amber-400" />
@@ -34,19 +34,41 @@ export default function Footer() {
             <h4 className="font-extrabold text-white text-sm tracking-wider uppercase">Navigation</h4>
             <ul className="space-y-2 font-medium">
               <li>
-                <a href="#features" className="hover:text-amber-400 transition-colors">Highlights</a>
+                <a href="/#features" className="hover:text-amber-400 transition-colors">Highlights</a>
               </li>
               <li>
-                <a href="#specs" className="hover:text-amber-400 transition-colors">Technische Specs</a>
+                <a href="/#specs" className="hover:text-amber-400 transition-colors">Technische Specs</a>
               </li>
               <li>
-                <a href="#vorteile" className="hover:text-amber-400 transition-colors">Vorteile</a>
+                <a href="/#vorteile" className="hover:text-amber-400 transition-colors">Vorteile</a>
               </li>
               <li>
                 <Link to={createPageUrl('Tarifrechner')} className="hover:text-amber-400 transition-colors">Ersparnisrechner</Link>
               </li>
               <li>
-                <a href="#faq" className="hover:text-amber-400 transition-colors">FAQ</a>
+                <a href="/#faq" className="hover:text-amber-400 transition-colors">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Ratgeber Links for SEO Crawling */}
+          <div className="space-y-3">
+            <h4 className="font-extrabold text-white text-sm tracking-wider uppercase">Ratgeber &amp; Vergleiche</h4>
+            <ul className="space-y-2 font-medium">
+              <li>
+                <Link to="/kostenloses-girokonto-ohne-gehaltseingang" className="hover:text-amber-400 transition-colors">
+                  Konto ohne Gehaltseingang
+                </Link>
+              </li>
+              <li>
+                <Link to="/tagesgeld-zinsen-vergleich" className="hover:text-amber-400 transition-colors">
+                  Tagesgeld-Zinsen Check
+                </Link>
+              </li>
+              <li>
+                <Link to="/tarifrechner" className="hover:text-amber-400 transition-colors">
+                  Girokonto-Tarifrechner
+                </Link>
               </li>
             </ul>
           </div>

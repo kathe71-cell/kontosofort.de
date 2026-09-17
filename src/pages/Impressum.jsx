@@ -6,6 +6,17 @@ import { Button } from "@/components/ui/button";
 export default function Impressum() {
   useEffect(() => {
     document.title = "Impressum | kontosofort.de";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://kontosofort.de/impressum";
+
+    return () => {
+      if (canonical) canonical.href = "https://kontosofort.de/";
+    };
   }, []);
 
   return (

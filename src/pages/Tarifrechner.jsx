@@ -10,6 +10,15 @@ export default function Tarifrechner() {
   useEffect(() => {
     document.title = "Girokonto Tarifrechner – Kostenloser Vergleich 2026 | kontosofort.de";
     
+    // Set canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://kontosofort.de/tarifrechner";
+
     // Set meta description
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {

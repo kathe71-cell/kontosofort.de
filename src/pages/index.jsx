@@ -59,6 +59,8 @@ function PagesContent() {
                 <Route path="/Impressum" element={<Impressum />} />
                 <Route path="/impressum" element={<Impressum />} />
                 <Route path="/zimpressum" element={<Impressum />} />
+                <Route path="/zh/impressum" element={<Impressum />} />
+                <Route path="/zh/datenschutz" element={<Datenschutz />} />
                 
                 <Route path="/Tarifrechner" element={<Tarifrechner />} />
                 <Route path="/tarifrechner" element={<Tarifrechner />} />

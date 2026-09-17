@@ -7,10 +7,11 @@ import { Menu, Shield } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { label: 'C24 Highlights', href: '#features' },
-  { label: 'Technische Specs', href: '#specs' },
+  { label: 'Highlights', href: '#features' },
+  { label: 'Specs', href: '#specs' },
   { label: 'Vorteile & Zinsen', href: '#vorteile' },
-  { label: 'Ersparnisrechner', href: '#tarifrechner' },
+  { label: 'Konto ohne Gehalt', href: '/kostenloses-girokonto-ohne-gehaltseingang', isRoute: true },
+  { label: 'Tagesgeld-Check', href: '/tagesgeld-zinsen-vergleich', isRoute: true },
   { label: 'FAQ', href: '#faq' },
 ];
 
@@ -30,6 +31,7 @@ export default function Header() {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
+      e.preventDefault();
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -38,6 +40,8 @@ export default function Header() {
         top: offsetPosition,
         behavior: 'smooth'
       });
+    } else if (window.location.pathname !== '/') {
+      window.location.href = '/' + href;
     }
     setIsOpen(false);
   };
@@ -75,7 +79,15 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200">
-            {navItems.map((item) => (
+            {navItems.map((item) => item.isRoute ? (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="px-4 py-1.5 text-sm font-semibold text-slate-700 hover:text-slate-950 hover:bg-white rounded-full transition-all duration-200 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
+              >
+                {item.label}
+              </Link>
+            ) : (
               <a
                 key={item.href}
                 href={item.href}
@@ -109,7 +121,16 @@ export default function Header() {
                 </div>
 
                 <nav className="flex flex-col gap-2 py-6">
-                  {navItems.map((item) => (
+                  {navItems.map((item) => item.isRoute ? (
+                    <Link
+                      key={item.href}
+                      to={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-base font-bold text-slate-800 hover:text-amber-600 hover:bg-slate-50 px-3 py-2.5 rounded-lg transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
                     <a
                       key={item.href}
                       href={item.href}
@@ -121,7 +142,7 @@ export default function Header() {
                   ))}
                   <hr className="my-2 border-slate-200" />
                   <Link
-                    to={createPageUrl('Tarifrechner')}
+                    to="/tarifrechner"
                     onClick={() => setIsOpen(false)}
                     className="text-sm font-bold text-emerald-700 hover:bg-emerald-50 px-3 py-2 rounded-lg"
                   >
