@@ -2,17 +2,32 @@
   "version": 2,
   "redirects": [
     {
-      "source": "/(zh|de|en)?/?(z?impressum|zh/impressum)",
+      "source": "/zh/impressum",
       "destination": "/impressum",
       "permanent": true
     },
     {
-      "source": "/(zh|de|en)?/?(z?datenschutz|zh/datenschutz)",
+      "source": "/zimpressum",
+      "destination": "/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/zh/datenschutz",
       "destination": "/datenschutz",
       "permanent": true
     },
     {
-      "source": "/(home|Home)",
+      "source": "/zdatenschutz",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Home",
       "destination": "/",
       "permanent": true
     }

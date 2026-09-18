@@ -99,19 +99,21 @@ export default function Tarifrechner() {
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-          <Button
-            asChild
-            size="lg"
-            className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-6 rounded-xl shadow-md border border-amber-400 text-sm focus-visible:ring-2 focus-visible:ring-amber-500"
-          >
-            <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
-              Direkt zum Testsieger C24 Bank *
-              <ArrowRight className="ml-2 w-4 h-4 stroke-[3]" />
-            </a>
-            <span className="text-slate-500 italic">
-              * Werbelink / Partnerlink https://a.check24.net/misc/click.php?pid=83873&aid=18&deep=c24bank&cat=14
+          <div className="flex flex-col items-center">
+            <Button
+              asChild
+              size="lg"
+              className="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-8 py-6 rounded-xl shadow-md border border-amber-400 text-sm focus-visible:ring-2 focus-visible:ring-amber-500"
+            >
+              <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
+                Direkt zum C24 Smart Konto *
+                <ArrowRight className="ml-2 w-4 h-4 stroke-[3]" />
+              </a>
+            </Button>
+            <span className="text-[11px] text-slate-500 italic mt-1.5">
+              * Werbelink / Partnerlink
             </span>
-          </Button>
+          </div>
 
           <Button
             asChild
