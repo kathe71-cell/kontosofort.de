@@ -2,6 +2,17 @@
   "version": 2,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kontosofort.de"
+        }
+      ],
+      "destination": "https://kontosofort.de/$1",
+      "permanent": true
+    },
+    {
       "source": "/zh/impressum",
       "destination": "/impressum",
       "permanent": true
