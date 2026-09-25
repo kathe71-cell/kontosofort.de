@@ -96,13 +96,6 @@ export default function Impressum() {
             </section>
 
             <section className="space-y-3">
-              <h2 className="text-xl font-black text-slate-900">Umsatzsteuer-Identifikation</h2>
-              <p>
-                Kleinunternehmer gemäß § 19 UStG. Es wird keine Umsatzsteuer berechnet und ausgewiesen.
-              </p>
-            </section>
-
-            <section className="space-y-3">
               <h2 className="text-xl font-black text-slate-900">Redaktionell verantwortlich</h2>
               <p className="font-semibold text-slate-800">
                 Jens Kathe<br />
