@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import StickyMobileBar from "@/components/landing/StickyMobileBar";
 import { CheckCircle2, Shield, ArrowRight, Star, Sparkles, Building2, HelpCircle } from "lucide-react";
 
 export default function KontoOhneGehaltseingang() {
@@ -178,6 +179,7 @@ export default function KontoOhneGehaltseingang() {
       </main>
 
       <Footer />
+      <StickyMobileBar />
     </div>
   );
 }

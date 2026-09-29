@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import StickyMobileBar from "@/components/landing/StickyMobileBar";
 import { CheckCircle2, ArrowRight, TrendingUp, PiggyBank, ShieldCheck } from "lucide-react";
 
 export default function TagesgeldZinsenVergleich() {
@@ -143,6 +144,7 @@ export default function TagesgeldZinsenVergleich() {
       </main>
 
       <Footer />
+      <StickyMobileBar />
     </div>
   );
 }
