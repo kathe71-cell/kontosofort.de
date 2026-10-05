@@ -71,7 +71,6 @@ export default function Datenschutz() {
               <h2 className="text-xl font-black text-slate-900">2. Verantwortlicher</h2>
               <p className="text-slate-800 font-semibold">
                 Jens Kathe – vollständige Anschrift und Kontaktdaten siehe <Link to={createPageUrl('Impressum')} className="text-amber-700 underline">Impressum</Link>.<br /><br />
-                Telefon: +49 178 6652623<br />
                 E-Mail: <a href="mailto:jens@kathe.org" className="text-amber-700 underline">jens@kathe.org</a>
               </p>
             </section>

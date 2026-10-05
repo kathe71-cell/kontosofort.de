@@ -28,7 +28,6 @@ export default function Home() {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+49-178-6652623",
       "email": "jens@kathe.org",
       "contactType": "customer service"
     }

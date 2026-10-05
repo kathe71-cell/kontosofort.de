@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Shield, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { ArrowLeft, Shield, Mail, MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Impressum() {
@@ -73,15 +73,6 @@ export default function Impressum() {
             <section className="space-y-3">
               <h2 className="text-xl font-black text-slate-900">Kontaktmöglichkeiten</h2>
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
-                  <Phone className="w-5 h-5 text-amber-600 flex-shrink-0" />
-                  <div>
-                    <span className="text-xs font-bold text-slate-500 block uppercase">Telefon</span>
-                    <a href="tel:+491786652623" className="font-extrabold text-slate-900 hover:text-amber-600">
-                      0178 6652623
-                    </a>
-                  </div>
-                </div>
 
                 <div className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
                   <Mail className="w-5 h-5 text-emerald-600 flex-shrink-0" />
