@@ -1,3 +1,4 @@
+import Projektuebernahme from "./Projektuebernahme";
 import Layout from "./Layout.jsx";
 
 import Datenschutz from "./Datenschutz";
@@ -13,6 +14,7 @@ import TagesgeldZinsenVergleich from "./TagesgeldZinsenVergleich";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
+    Projektuebernahme: Projektuebernahme,
     
     Datenschutz: Datenschutz,
     
