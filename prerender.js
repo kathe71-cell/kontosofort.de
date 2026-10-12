@@ -33,6 +33,10 @@ const ROUTES = {
     title: 'Datenschutzerklärung (DSGVO) | kontosofort.de',
     description: 'Datenschutzerklärung von kontosofort.de: DSGVO-konforme Datenverarbeitung ohne Profiling und ohne externe Google CDN Fonts.',
   },
+  '/projektuebernahme': {
+    title: 'Projektübernahme kontosofort.de | Domain & Projekt kaufen',
+    description: 'Informationen zur möglichen Projektübernahme und Übertragung von kontosofort.de inklusive Website, Quellcode und Inhalten.',
+  },
 };
 
 console.log(`Starting prerendering of ${Object.keys(ROUTES).length} routes for kontosofort.de...`);

@@ -1,12 +1,120 @@
 {
   "version": 2,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kontosofort.de"
+        }
+      ],
+      "destination": "https://kontosofort.de/$1",
+      "permanent": true
+    },
+    {
+      "source": "/zh/impressum",
+      "destination": "/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/zimpressum",
+      "destination": "/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/zh/datenschutz",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/zdatenschutz",
+      "destination": "/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/de",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/de/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fr",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/finanzwissen",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/finanzwissen/(.*)",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!ads\\.txt|robots\\.txt|sitemap\\.xml|feed\\.xml|llms\\.txt|og-image\\.png|favicon\\.svg|assets/.*).*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/rechner-embed",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors *;"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOWALL"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
@@ -15,16 +123,25 @@
           "value": "nosniff"
         },
         {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/((?!rechner-embed).*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
         }
       ]
     }

@@ -1,4 +1,4 @@
-import Projektuebernahme from "./Projektuebernahme";
+import Projektuebernahme from "./ProjektuebernahmePage";
 import Layout from "./Layout.jsx";
 
 import Datenschutz from "./Datenschutz";
@@ -75,6 +75,8 @@ export function PagesContent() {
                 <Route path="/tagesgeld-zinsen-vergleich" element={<TagesgeldZinsenVergleich />} />
                 <Route path="/tagesgeld-zinsen" element={<TagesgeldZinsenVergleich />} />
                 <Route path="/zinsen" element={<TagesgeldZinsenVergleich />} />
+
+                <Route path="/projektuebernahme" element={<Projektuebernahme />} />
                 
             </Routes>
         </Layout>

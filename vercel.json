@@ -41,6 +41,36 @@
       "source": "/Home",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/de",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/de/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fr",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/finanzwissen",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/finanzwissen/(.*)",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
